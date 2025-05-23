@@ -26,9 +26,7 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone <URL вашего репозитория на Гитхабе>
-    ```
-    (Замени `<URL вашего репозитория на Гитхабе>` на реальный адрес после создания репозитория на Гитхабе)
+    git clone <(https://github.com/TroubleGy/DependencyScanner)>
 
 2.  **Navigate to the project directory:**
     ```bash
@@ -71,14 +69,6 @@ Contributions are welcome! If you have ideas for new features, improvements, or 
 5.  Open a Pull Request.
 
 Let's build something awesome together!
-
----
-
-## 📄 License
-
-(Можешь добавить раздел про лицензию, например, MIT. Это стандартно для опенсорс проектов.)
-
----
 
 ## 🌟 Show Your Support
 
