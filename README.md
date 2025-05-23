@@ -26,7 +26,7 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone `<https://github.com/TroubleGy/DependencyScanner>`
+    git clone https://github.com/TroubleGy/DependencyScanner
 
 2.  **Navigate to the project directory:**
     ```bash
