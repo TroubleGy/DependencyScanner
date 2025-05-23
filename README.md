@@ -27,6 +27,7 @@
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/TroubleGy/DependencyScanner
+    ```
 
 2.  **Navigate to the project directory:**
     ```bash
@@ -71,3 +72,9 @@ Let's build something awesome together!
 ## 🌟 Show Your Support
 
 Give a ⭐️ if this project helped you or you like the direction it's heading!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
