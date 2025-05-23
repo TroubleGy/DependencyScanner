@@ -26,14 +26,12 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone <(https://github.com/TroubleGy/DependencyScanner)>
+    git clone <https://github.com/TroubleGy/DependencyScanner>
 
 2.  **Navigate to the project directory:**
     ```bash
     cd DependencyScanner
     ```
-    (Или `cd RequirementsCreator`, если ты клонируешь его прямо в эту папку)
-
 3.  **Install the required library:**
     ```bash
     pip install PyQt6
