@@ -77,4 +77,4 @@ Give a ⭐️ if this project helped you or you like the direction it's heading!
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/TroubleGy/DependencyScanner/blob/main/LICENCE) file for details.
