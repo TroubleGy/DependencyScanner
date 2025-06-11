@@ -1,80 +1,137 @@
-# DependencyScanner
+# 🚀 Dependency Scanner
 
-**DependencyScanner:** Tired of manual dependency tracking? Scan code across languages! Get precise dependency files (like requirements.txt) using AST analysis. Sleek PyQt6 GUI. Future support for multiple languages planned. Simplify your workflow and build better projects faster!
+**Modern cross-language dependency scanner with a sleek PyQt6 interface.**  
+Quickly analyze Python and Node.js projects for external dependencies. Supports `requirements.txt`, `pyproject.toml`, `package.json`, AST imports, dynamic modules, and more.
+
+> **Version:** 1.1  
+> **Author:** [TroubleGy](https://github.com/TroubleGy)  
+> **License:** MIT  
+> **Supported Project Types:** Python, Node.js  
+> **UI Languages:** English 🇬🇧, Russian 🇷🇺
 
 ---
 
 ## ✨ Features
 
-*   **Intuitive GUI:** Easy-to-use graphical interface built with PyQt6.
-*   **Accurate Dependency Detection:** Utilizes Python's Abstract Syntax Tree (AST) module for precise parsing of import statements.
-*   **Python Support (v1.0.0):** Currently supports scanning Python projects to find external libraries.
-*   **`requirements.txt` Generation:** Automatically creates a `requirements.txt` file listing the detected dependencies in the scanned folder.
-*   **Folder Scanning:** Recursively scans all Python files within a selected directory and its subdirectories.
-*   **Built-in/Standard Library Exclusion:** Intelligently filters out Python's built-in modules and most standard library components.
-*   **Status Updates:** Provides feedback during the scanning process via the GUI and status bar.
-*   **Cross-Platform:** Built with Python and PyQt6, it should run on Windows, macOS, and Linux.
-
-## 🚀 Getting Started
-
-### Requirements
-
-*   Python 3.6 or higher
-*   PyQt6 library
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/TroubleGy/DependencyScanner
-    ```
-
-2.  **Navigate to the project directory:**
-    ```bash
-    cd DependencyScanner
-    ```
-3.  **Install the required library:**
-    ```bash
-    pip install PyQt6
-    ```
-
-### How to Run
-
-1.  **Make sure you are in the project directory** (where `dependency_scanner.py` is located).
-2.  **Run the script:**
-    ```bash
-    python dependency_scanner.py
-    ```
-3.  The GUI application window will open.
-4.  Click the "Browse" button to select the root folder of the project you want to scan.
-5.  Click "Scan Dependencies". The results and scanning progress will appear in the text area.
-6.  Once the scan is complete and if dependencies are found, click "Create requirements.txt" to generate the file in the scanned folder.
-
-## Roadmap
-
-*   **Support for More Languages:** Implement scanning logic for Node.js (`package.json`), Java (Maven `pom.xml` / Gradle `build.gradle`), Ruby (Gemfile), Go (`go.mod`), Rust (`Cargo.toml`), and more.
-*   **Version Checking:** Add functionality to check for the latest versions of detected dependencies (requires integrating with package managers' APIs like PyPI, npm registry, etc.).
-*   **Dependency Updates:** Potentially add features to suggest or even automate dependency updates via Pull Requests.
-*   **Improved UI/UX:** Further refine the graphical interface for better usability and aesthetics.
-
-## 👋 Contributing
-
-Contributions are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to:
-
-1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b feature/YourFeature`).
-3.  Commit your changes (`git commit -m 'Add some YourFeature'`).
-4.  Push to the branch (`git push origin feature/YourFeature`).
-5.  Open a Pull Request.
-
-Let's build something awesome together!
-
-## 🌟 Show Your Support
-
-Give a ⭐️ if this project helped you or you like the direction it's heading!
+- 🖥️ **User-Friendly GUI** built with PyQt6  
+- 🔍 **Deep Code Analysis**
+  - Parses static imports (`ast`)
+  - Detects dynamic imports (`importlib`)
+  - Scans `requirements.txt`, `pyproject.toml`, `package.json`
+  - Supports `.py`, `.js`, `.ts`, `.tsx` files
+- 📄 **Generates dependency files**
+  - `requirements.txt` for Python
+  - `package_dependencies.txt` for Node.js
+- ⚡ **Install dependencies directly** (Python only)
+- 🧠 **Excludes** standard library & built-in modules
+- ♻️ **Live updates** while scanning
+- 🖱️ **Drag & Drop** folders into the interface
+- 🌍 **Multilingual UI**: English / Russian switch
+- 🧩 **Tabbed layout** for main and settings
+- 📝 **Generates scanner.log** file automatically
+- 🔁 Threaded scanning with stable QThread backend
 
 ---
 
-## 📄 License
+## 📦 Dependencies
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/TroubleGy/DependencyScanner/blob/main/LICENCE) file for details.
+To run this project, you need the following Python packages:
+
+- PyQt6  
+- stdlib_list  
+- toml  
+
+You can install them manually or using the included `requirements.txt`.
+
+---
+
+## 🖥️ How to Run
+```bash
+git clone https://github.com/TroubleGy/DependencyScanner  
+cd DependencyScanner  
+python dependency_scanner.py
+```
+---
+
+## 🧪 Usage
+
+- Launch the application  
+- Click **Browse** or **Drag & Drop** a folder  
+- Select the language: **Python** or **Node.js**  
+- Click **Scan Dependencies**  
+- View results live during scan  
+- Click **Create requirements.txt** (or `package_dependencies.txt`)  
+- *(Python only)* Click **Install Dependencies** to install using pip
+
+---
+
+## 📁 Project Structure
+
+DependencyScanner/  
+├── dependency_scanner.py          — Main application  
+├── assets/  
+│   ├── icon.png                   — Window icon  
+│   ├── github.png                — GitHub button icon  
+│   └── translations.json         — UI text translations (EN/RU)  
+├── requirements.txt              — Required Python libraries  
+├── scanner.log                   — Log file created during usage  
+└── README.md
+
+---
+
+## 📘 Roadmap
+
+- ✅ Node.js support (package.json and JS/TS analysis)
+- 🧩 Future support: Go, Java (Maven), Rust, Ruby
+- 🔍 Dependency version checking (PyPI / NPM)
+- ⚙️ Auto-suggestions for outdated libraries
+- 🤖 AI-powered security/license detection
+- 🐳 Docker version
+- 📤 Export scanned results to HTML / Markdown
+- 🖥️ Optional command-line (CLI) interface
+
+---
+
+## 🎯 Why Use Dependency Scanner?
+
+| Feature                                        | Manual  | Dependency Scanner  |
+|------------------------------------------------|---------|---------------------|
+| Detect `.py`, `.js`, `.ts`, `.json`, `.toml`   |   ❌     |       ✅          |
+| Skip built-ins and stdlib                      |   ❌     |       ✅          |
+| Generate proper dependency files               |   ⚠️     |       ✅          |
+| Drag & Drop GUI                                |   ❌     |       ✅          |
+| Install Python packages automatically          |   ❌     |       ✅          |
+| Localized UI (EN / RU)                         |   ❌     |       ✅          |
+
+---
+
+## 🔥 Development Mode
+```bash
+pip install -r requirements.txt  
+python dependency_scanner.py
+```
+
+---
+
+## 🔐 License
+
+MIT License  
+See the LICENSE file for full details.
+
+---
+
+## 👤 Author
+
+**TroubleGy**  
+GitHub — https://github.com/TroubleGy
+
+> Built with ❤️, PyQt6, and sleepless nights 😎
+
+---
+
+## 🌟 Support This Project
+
+If this project helped you — give it a ⭐️ on GitHub!  
+You’re also welcome to share it or contribute 🙌
+
+---
