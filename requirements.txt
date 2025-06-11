@@ -1,0 +1,3 @@
+PyQt6
+stdlib_list
+toml
